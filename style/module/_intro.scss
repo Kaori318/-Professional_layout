@@ -1,3 +1,5 @@
+@import "color_font_mixin";
+
 .intro {
     background-color: #F1E4E6;
     height: 764px;
@@ -29,7 +31,8 @@
     line-height: 58px;
     display: block;
     }
-    &__text .color-ping {
+}
+
+.color-pink {
     color: #F16D7F;
     }
-}

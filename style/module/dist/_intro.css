@@ -1,0 +1,36 @@
+.intro {
+  background-color: #F1E4E6;
+  height: 764px;
+  margin-bottom: 65px;
+}
+.intro__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  background-image: url(../../img/top.png);
+  background-repeat: no-repeat;
+  background-position: -228px bottom;
+}
+.intro__text {
+  max-width: 465px;
+}
+.intro__text h1 {
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #222222;
+  padding-right: 80px;
+}
+.intro__text .font-size-h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  display: block;
+}
+
+.color-pink {
+  color: #F16D7F;
+}

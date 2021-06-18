@@ -1,6 +1,6 @@
 @import "module/header";
 @import "module/intro";
-@import "module/color";
+@import "module/color_font_mixin";
 @import "module/content";
 @import "module/Fetured_Items";
 @import "module/footer_top";
@@ -9,6 +9,7 @@
 @import "module/filtet_menu";
 @import "module/pagination";
 @import "module/slider_and_collection";
+@import "module/card_cart";
 
 $width: 1140px;
 * {
@@ -30,5 +31,7 @@ a {
 }
 
 .card-box__padding {
-    padding-bottom: 100px;
+    padding-bottom: 100px;   
 }
+
+
