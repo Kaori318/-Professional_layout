@@ -1,0 +1,14 @@
+.header {
+    background: #222222;
+    padding: 18px 0 19px 0;
+    &__wrap {
+        display: flex;
+    justify-content: space-between;
+    }
+    &__logo {
+        padding-right: 40px;
+    }
+    &__item:not(:last-child) {
+        padding-right: 33px;
+    }
+}

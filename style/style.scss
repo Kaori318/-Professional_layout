@@ -1,0 +1,34 @@
+@import "module/header";
+@import "module/intro";
+@import "module/color";
+@import "module/content";
+@import "module/Fetured_Items";
+@import "module/footer_top";
+@import "module/footer_bottom";
+@import "module/breadcrumbs";
+@import "module/filtet_menu";
+@import "module/pagination";
+@import "module/slider_and_collection";
+
+$width: 1140px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: $width;
+    margin: 0 auto;
+}
+
+.card-box__padding {
+    padding-bottom: 100px;
+}
