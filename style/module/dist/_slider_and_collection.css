@@ -93,14 +93,14 @@
 }
 
 .collection__item {
-  padding-left: 20px;
+  margin-left: 20px;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
 }
 
 .collection__item svg {
-  padding-left: 5px;
+  margin-left: 5px;
 }
 
 .collection__button {
@@ -118,7 +118,8 @@
 .button__Add_to_Cart svg {
   display: inline-block;
   vertical-align: middle;
-  padding-right: 20px;
+  margin-right: 20px;
+  transition-duration: 0.5s;
 }
 
 .button__Add_to_Cart:hover svg {

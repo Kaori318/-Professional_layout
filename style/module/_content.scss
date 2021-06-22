@@ -35,6 +35,10 @@
         @include t16(400,$white);
         width: 160px;
         text-align: center;
+        transition-duration: 0.5s;    /*Скорость анимации*/
+        &:hover { 
+            transform: scale(1.4);   /*Анимация увеличение*/
+        }
     } 
 }
 

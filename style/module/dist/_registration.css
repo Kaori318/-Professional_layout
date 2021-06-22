@@ -1,0 +1,92 @@
+.registration_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.registration__name,
+.registration__gender,
+.registration__login {
+  border: 0;
+  padding-bottom: 33px;
+}
+
+.registration {
+  width: 360px;
+}
+.registration__name legend, .registration__login legend {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #222222;
+}
+.registration__name input, .registration__login input {
+  border: 1px solid #A4A4A4;
+  padding: 13px 16px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #B1B1B1;
+  font-family: Lato;
+  margin-top: 20px;
+  width: 360px;
+}
+.registration__name p, .registration__login p {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #B1B1B1;
+  padding-top: 15px;
+}
+.registration__gender {
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 300;
+  color: #000000;
+}
+.registration__gender input {
+  border: 1px solid #B1B1B1;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.registration__gender .gender {
+  padding-right: 20px;
+}
+.registration__button {
+  padding: 16px 29px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #FFFFFF;
+  background: #F16D7F;
+  border: none;
+}
+.registration__button svg {
+  margin-left: 20px;
+}
+
+.loyalty {
+  max-width: 650px;
+}
+.loyalty h2,
+.loyalty p {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #000000;
+  padding-bottom: 22px;
+}
+.loyalty ul {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #000000;
+}
+.loyalty ul > li {
+  margin-bottom: 16px;
+}
+.loyalty ul > li::before {
+  content: url(../../img/vector/check_mark.svg);
+  margin-right: 22px;
+}

@@ -31,38 +31,41 @@
     </section>
     <main class="container registration_wrap">
         <div>
-            <form action="">
-                <fieldset>
+            <form class="registration" action="">
+                <fieldset class="registration__name">
                     <legend>Your Name</legend>
                     <input type="text" placeholder="First Name"><br>
                     <input type="text" placeholder="Last Name"><br>
                 </fieldset>
-                <fieldset>
-                    <label><input type="radio" name="gender" checked> Male</label>
-                    <label><input type="radio" name="gender"> Female</label>
+                <fieldset class="registration__gender">
+                    <label><input type="radio" name="gender" checked> <span class="gender">Male</span> </label>
+                    <label><input type="radio" name="gender"><span class="gender">Female</span></label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="registration__login">
                     <legend>Login details</legend>
                     <input type="email" placeholder="Email">
                     <input type="password" placeholder="Password">
                     <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
                         letters</p>
                 </fieldset>
-                <button>JOIN NOW</button>
+                <button class="registration__button">JOIN NOW <svg width="17" height="10" fill="#fff"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.54.208a.709.709 0 011.003 0l4.25 4.25a.708.708 0 010 1.003l-4.25 4.25a.71.71 0 01-1.003-1.003l3.75-3.749-3.75-3.748a.708.708 0 010-1.003z"
+                            fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 4.96a.708.708 0 01.708-.709h14.875a.708.708 0 010 1.417H.708A.708.708 0 010 4.959z" />
+                    </svg></button>
             </form>
         </div>
-        <div>
+        <div class="loyalty">
             <h2>LOYALTY HAS ITS PERKS</h2>
             <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
                 soon as you join:</p>
             <ul>
-                <li>15% off welcome offer
-                </li>
-                <liFree shipping, returns and exchanges on all orders></liFree>
-                </li>
-                <li>$10 off a purchase on your birthday
-
-                </li>
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
                 <li>Early access to products</li>
                 <li>Exclusive offers & rewards</li>
             </ul>

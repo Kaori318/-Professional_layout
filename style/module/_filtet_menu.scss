@@ -130,6 +130,7 @@
     z-index: 3;
     border: none;
     padding-left: 10px;
+    @include t14(400,$grey);
 
     &::-webkit-details-marker {
         display: none;
@@ -141,8 +142,4 @@
    padding-left: 10px;
    color: #EBEBEB;
    margin-right: 10px;
-}
-
-.size {
-    @include t14(400,$grey);
 }

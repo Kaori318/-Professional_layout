@@ -1,9 +1,9 @@
 @import "color_font_mixin";
 
 .Fetured_Items {
-    text-align: center;
     margin-bottom: 48px;
     margin-top: 96px;
+    text-align: center;
     &__header {
         padding-bottom: 48px;
     }
@@ -65,6 +65,12 @@
         @include t14(400,#FBFBFB);
         border: 1px solid #fff;
         padding: 12px 14px;
+        transition-duration: 1.2s;
+        transition-property: background-color;  /*Анимация для цвета фона*/
+        &:hover {
+            outline: 2px solid #fff;
+            background-color: $grey;
+        }
 
         img {
             display: inline-block;
@@ -78,17 +84,28 @@
 }
 
 .button {
-    display: flex;
-    justify-content: center;  
-
-    &:hover .button_text{
+    transition-duration: 1s;  
+    &:hover{
+        transform: scale(1.1);   
+    }
+    .button_text {
+        transition-duration: 0.5s;  
+    &:hover{
         color: #F8F8F8;
         background-color: #F16D7F;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+       
     }
 }
-.Fetured_Items__button a {
+}
+.Fetured_Items__button {
+    text-align: center;
+    border: none;
+    background-color: $white;
+    display: inline-block;
+    text-align: center;
+    a {
     padding: 14px 38px;
     border: 1px solid #F16D7F;
-    text-align: center;
-    display: inline-block;
+}
 }
