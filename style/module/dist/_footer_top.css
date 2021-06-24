@@ -1,0 +1,31 @@
+.top {
+  margin-top: 96px;
+  background: #222222;
+  padding: 100px 0;
+}
+.top__colump {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  vertical-align: middle;
+}
+.top__item {
+  width: 360px;
+  text-align: center;
+}
+.top__text h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FBFBFB;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.top__text p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #FBFBFB;
+}

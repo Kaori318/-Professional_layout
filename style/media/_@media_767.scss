@@ -1,0 +1,48 @@
+@import "../module/color_font_mixin";
+
+
+@media (max-width:767px) {
+  .nav__hidden {
+    opacity: 1;
+  }
+
+  .header__item-hidden {
+    opacity: 0;
+    display: none;
+}
+  .header {
+  &__item:not(:last-child) {
+      padding-right: 0;
+    }
+  } 
+  .content {
+    justify-content: center;
+    width: 100%;
+  &__item {
+          min-height: 260px;
+          min-width: 344px;
+          width: 60%;
+          margin-bottom: 32px;
+          &:nth-child(1),
+                &:nth-child(2){
+                    margin-right: 0px;
+                }
+          &:last-child {   
+              min-height: 116px;
+              width: 60%;
+              min-width: 344px;
+              margin: 0;
+          }
+        }
+      }
+  .card {
+    margin-right: 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+}
