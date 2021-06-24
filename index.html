@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style/dist/style.css">
     <title>THE_BRAND</title>
 </head>
@@ -13,14 +15,86 @@
     <header class="header">
         <div class="container header__wrap">
             <div class="header__left">
-                <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="logo"></a>
-                <a href=""><img src="img/search.svg" alt="search"></a>
+                <a class="header__logo" href="index.html"><img src="img/icons/logo.svg" alt="logo"></a>
+                <a href=""><img src="img/icons/search.svg" alt="search"></a>
             </div>
 
             <nav class="header__right">
-                <a class="header__item" href=""><img src="img/menu.svg" alt="menu"></a>
-                <a class="header__item" href="registration.html"><img src="img/contact.svg" alt="contact"></a>
-                <a class="header__item" href="cart.html"><img src="img/basket5.svg" alt="basket"></a>
+                <input type="checkbox" id="burger"> <label class="header__item" for="burger"><img
+                        src="img/icons/menu.svg" alt="menu"></label>
+                <nav class="header__nav nav">
+                    <div class="nav__wrap">
+                        <label class="nav__close" for="burger"><img src="img/icons/burger_close.svg"
+                                alt="close"></label>
+                        <h2 class="nav__title">MENU</h2>
+                        <h3 class="nav__heading">MAN</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Bags</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Denim</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                        </ul>
+
+                        <h3 class="nav__heading">WOMAN</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Jackets & Coats</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Polos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Shirts</a>
+                            </li>
+                        </ul>
+
+                        <h3 class="nav__heading">KIDS</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Jackets & Coats</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Polos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Bags</a>
+                            </li>
+                        </ul>
+                        <a href="registration.html">
+                            <h2 class="nav__title nav__hidden">CONTACT</h2>
+                        </a>
+                        <a href="cart.html">
+                            <h2 class="nav__title nav__hidden">CART</h2>
+                        </a>
+                    </div>
+                </nav>
+                <a class="header__item header__item-hidden" href="registration.html"><img src="img/icons/contact.svg"
+                        alt="contact"></a>
+                <a class="header__item header__item-hidden" href="cart.html"><img src="img/icons/cart.svg"
+                        alt="cart"><span class="count">5</span></a>
             </nav>
         </div>
     </header>
@@ -78,10 +152,10 @@
                 </div>
                 <div class="Fetured_Items__card-box card-box">
                     <article class="Fetured_Items__card card">
-                        <div class="card__img"><img src="img/card1.jpg" alt="photo"></div>
+                        <div class="card__img"><img src="img/card/card1.jpg" alt="photo"></div>
                         <div class="overlay">
                             <a href="" class="overlay__button">
-                                <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                                <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
                         </div>
                         <div class="card__text">
                             <a href="">
@@ -91,14 +165,14 @@
                                 of
                                 cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <strong class="card__strong">$52.00</strong>
+                            <strong>$52.00</strong>
                         </div>
                     </article>
                     <article class="Fetured_Items__card card">
-                        <div class="card__img"><img src="img/card2.jpg" alt="photo"></div>
+                        <div class="card__img"><img src="img/card/card2.jpg" alt="photo"></div>
                         <div class="overlay">
                             <a href="" class="overlay__button">
-                                <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                                <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
                         </div>
                         <div class="card__text">
                             <a href="">
@@ -108,14 +182,14 @@
                                 of
                                 cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <strong class="card__strong">$52.00</strong>
+                            <strong>$52.00</strong>
                         </div>
                     </article>
                     <article class="Fetured_Items__card card">
-                        <div class="card__img"><img src="img/card3.jpg" alt="photo"></div>
+                        <div class="card__img"><img src="img/card/card3.jpg" alt="photo"></div>
                         <div class="overlay">
                             <a href="" class="overlay__button">
-                                <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                                <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
                         </div>
                         <div class="card__text">
                             <a href="">
@@ -125,14 +199,14 @@
                                 of
                                 cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <strong class="card__strong">$52.00</strong>
+                            <strong>$52.00</strong>
                         </div>
                     </article>
                     <article class="Fetured_Items__card card">
-                        <div class="card__img"><img src="img/card4.jpg" alt="photo"></div>
+                        <div class="card__img"><img src="img/card/card4.jpg" alt="photo"></div>
                         <div class="overlay">
                             <a href="" class="overlay__button">
-                                <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                                <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
                         </div>
                         <div class="card__text">
                             <a href="">
@@ -142,14 +216,14 @@
                                 of
                                 cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <strong class="card__strong">$52.00</strong>
+                            <strong>$52.00</strong>
                         </div>
                     </article>
                     <article class="Fetured_Items__card card">
-                        <div class="card__img"><img src="img/card5.jpg" alt="photo"></div>
+                        <div class="card__img"><img src="img/card/card5.jpg" alt="photo"></div>
                         <div class="overlay">
                             <a href="" class="overlay__button">
-                                <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                                <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
                         </div>
                         <div class="card__text">
                             <a href="">
@@ -159,14 +233,14 @@
                                 of
                                 cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <strong class="card__strong">$52.00</strong>
+                            <strong>$52.00</strong>
                         </div>
                     </article>
                     <article class="Fetured_Items__card card">
-                        <div class="card__img"><img src="img/card6.jpg" alt="photo"></div>
+                        <div class="card__img"><img src="img/card/card6.jpg" alt="photo"></div>
                         <div class="overlay">
                             <a href="" class="overlay__button">
-                                <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                                <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
                         </div>
                         <div class="card__text">
                             <a href="">
@@ -176,12 +250,12 @@
                                 of
                                 cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <strong class="card__strong">$52.00</strong>
+                            <strong>$52.00</strong>
                         </div>
                     </article>
                 </div>
-                <button class="Fetured_Items__button button"><a href="#" class="button_text">Browse All Product</a>
-                </button>
+                <a href="product.html" class="Fetured_Items__button">Browse All Product</a>
+            </div>
         </section>
     </main>
 
@@ -189,7 +263,7 @@
         <div class="footer__top top">
             <div class="container top__colump">
                 <div class="top__item">
-                    <div class="top__img"><img src="img/footer_top_1.svg" alt=""></div>
+                    <div class="top__img"><img src="img/icons/footer_top_1.svg" alt=""></div>
                     <div class="top__text">
                         <h3>Free Delivery</h3>
                         <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
@@ -197,9 +271,9 @@
                             models.</p>
                     </div>
                 </div>
-                <div class="top-item">
+                <div class="top__item">
                     <div class="top__item">
-                        <div class="top__img"><img src="img/footer_top_2.svg" alt=""></div>
+                        <div class="top__img"><img src="img/icons/footer_top_2.svg" alt=""></div>
                         <div class="top__text">
                             <h3>Sales & discounts</h3>
                             <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
@@ -209,7 +283,7 @@
                     </div>
                 </div>
                 <div class="top__item">
-                    <div class="top__img"><img src="img/footer_top_3.svg" alt=""></div>
+                    <div class="top__img"><img src="img/icons/footer_top_3.svg" alt=""></div>
                     <div class="top__text">
                         <h3>Quality assurance</h3>
                         <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with
@@ -231,7 +305,7 @@
                 <div class="bottom__item">
                     <h3><span class="bold">SUBSCRIBE</span>
                         FOR OUR NEWLETTER AND PROMOTION</h3>
-                    <form method="post" action="">
+                    <form method="post" action="#">
                         <div class="post__wrap">
                             <input class="post__input" type="email" placeholder="Enter Your Email">
                             <button class="post__button">Subscribe</button>
@@ -239,7 +313,6 @@
                     </form>
                 </div>
             </div>
-        </div>
         </div>
         <div class="All_Rights_Reserved">
             <div class="container All_Rights_Reserved__wrap">

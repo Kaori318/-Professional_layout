@@ -8,9 +8,13 @@
 @import "module/breadcrumbs";
 @import "module/filtet_menu";
 @import "module/pagination";
-@import "module/slider_and_collection";
+@import "module/slider_and_collection"; 
 @import "module/card_cart";
 @import "module/registration";
+@import "module/card_box__card";
+@import "media/@media_1195";
+@import "media/@media_787";
+@import "media/@media_767";
 
 $width: 1140px;
 
@@ -20,20 +24,16 @@ $width: 1140px;
     box-sizing: border-box;
     list-style: none;
 }
-
 body {
     font-family: Lato;
 }
-
 a {
     text-decoration: none;
 }
-
 .container {
     max-width: $width;
     margin: 0 auto;
 }
-
-.card-box__padding {
-    padding-bottom: 100px; 
-}
+.color-pink {
+    color: #F16D7F;
+    }

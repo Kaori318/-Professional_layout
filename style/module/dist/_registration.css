@@ -62,6 +62,9 @@
   background: #F16D7F;
   border: none;
 }
+.registration__button:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
+}
 .registration__button svg {
   margin-left: 20px;
 }

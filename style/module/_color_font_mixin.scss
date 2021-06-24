@@ -58,3 +58,24 @@ line-height: $lh;
 font-weight: $fw;
 color: $c;
 }
+
+@mixin btn-w($p,$c) {
+  padding: $p;
+  outline: 1px solid $c;
+  border: none;
+  display: inline-block;
+
+}
+
+@mixin btn-p($p) {
+  padding: $p;
+  background-color: $pink;
+  border: none;
+  display: inline-block;
+}
+
+@mixin centr {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}

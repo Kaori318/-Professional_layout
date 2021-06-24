@@ -51,9 +51,13 @@
         @include t14(300,$white);
         background: #F16D7F;
         border: none;
+        &:hover {
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
+            }
         svg {
         margin-left: 20px;
         }
+        
     }
 }
 

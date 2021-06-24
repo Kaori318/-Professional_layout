@@ -13,13 +13,86 @@
     <header class="header">
         <div class="container header__wrap">
             <div class="header__left">
-                <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="logo"></a>
-                <a href=""><img src="img/search.svg" alt="search"></a>
+                <a class="header__logo" href="index.html"><img src="img/icons/logo.svg" alt="logo"></a>
+                <a href=""><img src="img/icons/search.svg" alt="search"></a>
             </div>
+
             <nav class="header__right">
-                <a class="header__item" href=""><img src="img/menu.svg" alt="menu"></a>
-                <a class="header__item" href="registration.html"><img src="img/contact.svg" alt="contact"></a>
-                <a class="header__item" href="cart.html"><img src="img/basket5.svg" alt="basket"></a>
+                <input type="checkbox" id="burger"> <label class="header__item" for="burger"><img
+                        src="img/icons/menu.svg" alt="menu"></label>
+                <nav class="header__nav nav">
+                    <div class="nav__wrap">
+                        <label class="nav__close" for="burger"><img src="img/icons/burger_close.svg"
+                                alt="close"></label>
+                        <h2 class="nav__title">MENU</h2>
+                        <h3 class="nav__heading">MAN</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Bags</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Denim</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                        </ul>
+
+                        <h3 class="nav__heading">WOMAN</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Jackets & Coats</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Polos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Shirts</a>
+                            </li>
+                        </ul>
+
+                        <h3 class="nav__heading">KIDS</h3>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Accessories</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Jackets & Coats</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Polos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">T-Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Shirts</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Bags</a>
+                            </li>
+                        </ul>
+                        <a href="registration.html">
+                            <h2 class="nav__title nav__hidden">CONTACT</h2>
+                        </a>
+                        <a href="cart.html">
+                            <h2 class="nav__title nav__hidden">CART</h2>
+                        </a>
+                    </div>
+                </nav>
+                <a class="header__item header__item-hidden" href="registration.html"><img src="img/icons/contact.svg"
+                        alt="contact"></a>
+                <a class="header__item header__item-hidden" href="cart.html"><img src="img/icons/cart.svg"
+                        alt="cart"><span class="count">5</span></a>
             </nav>
         </div>
     </header>
@@ -36,15 +109,13 @@
     </section>
     <div class="slider__background">
         <div class="slider">
-            <button class="slide__button"><a href=""><svg width="13" height="23" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.7 3.75L4.95 11.5l7.75 7.75-1.55 3.1L.3 11.5 11.15.65l1.55 3.1z" fill="#000" />
-                    </svg></a></button>
+            <button class="slide__button"><svg width="13" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.7 3.75L4.95 11.5l7.75 7.75-1.55 3.1L.3 11.5 11.15.65l1.55 3.1z" fill="#000" />
+                </svg></button>
             <img src="img/product_slide.png" alt="slide-photo">
-            <button class="slide__button"><a href=""><svg width="13" height="23" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M.3 19.25l7.75-7.75L.3 3.75 1.85.65 12.7 11.5 1.85 22.35.3 19.25z" fill="#F16D7F" />
-                    </svg></a></button>
+            <button class="slide__button"><svg width="13" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.3 19.25l7.75-7.75L.3 3.75 1.85.65 12.7 11.5 1.85 22.35.3 19.25z" fill="#F16D7F" />
+                </svg></button>
         </div>
     </div>
     <div class="container">
@@ -97,10 +168,10 @@
 
     <section class="container card-box card-box__padding">
         <article class="card">
-            <div class="card__img"><img src="img/catalog_card4.jpg" alt="photo"></div>
+            <div class="card__img"><img src="img/card/catalog_card4.jpg" alt="photo"></div>
             <div class="overlay">
                 <a href="" class="overlay__button">
-                    <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                    <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
             </div>
             <div class="card__text">
                 <a href="">
@@ -114,10 +185,10 @@
             </div>
         </article>
         <article class="card">
-            <div class="card__img"><img src="img/catalog_card3.jpg" alt="photo"></div>
+            <div class="card__img"><img src="img/card/catalog_card3.jpg" alt="photo"></div>
             <div class="overlay">
                 <a href="" class="overlay__button">
-                    <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                    <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
             </div>
             <div class="card__text">
                 <a href="">
@@ -131,10 +202,10 @@
             </div>
         </article>
         <article class="card">
-            <div class="card__img"><img src="img/card6.jpg" alt="photo"></div>
+            <div class="card__img"><img src="img/card/card6.jpg" alt="photo"></div>
             <div class="overlay">
                 <a href="" class="overlay__button">
-                    <img src="img/Vector (2).svg" alt=""><span>Add to Cart</span></a>
+                    <img src="img/Vector_card.svg" alt=""><span>Add to Cart</span></a>
             </div>
             <div class="card__text">
                 <a href="">
@@ -161,7 +232,7 @@
                 <div class="bottom__item">
                     <h3><span class="bold">SUBSCRIBE</span>
                         FOR OUR NEWLETTER AND PROMOTION</h3>
-                    <form method="post" action="">
+                    <form method="post" action="#">
                         <div class="post__wrap">
                             <input class="post__input" type="email" placeholder="Enter Your Email">
                             <button class="post__button">Subscribe</button>

@@ -6,106 +6,27 @@
     text-align: center;
     &__header {
         padding-bottom: 48px;
-    }
-    h2 {
-        @include text(30px,36px,400,$dark_grey);
-        padding-bottom: 6px;
-    }
-    p {
-        @include t14(400,$light_gray);
-    }
-}
-.card-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-.card {
-    width: 360px;
-    background: #F8F8F8;
-    margin-bottom: 30px;
-    position: relative;
-
-    &__text {
-        padding: 0 16px 20px 16px;
-
-        h4 {
-            @include t13(400,$black);
-            padding-top: 24px;
-            padding-bottom: 13px;
+        h2 {
+            @include text(30px,36px,400,$dark_grey);
+            padding-bottom: 6px;
         }
         p {
-            @include t14(400,$grey);
-            padding-bottom: 18px;
+            @include t14(400,$light_gray);
         }
     }
+    
 }
 
-.button_text,
-.card__strong {
-    @include t16(400,$light_pink);
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 420px;
-    background-color: rgba(58, 56, 56, 0.83);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: 0.5s;
-    border: 1px solid #FFFFFF;
-
-    &__button {
-        @include t14(400,#FBFBFB);
-        border: 1px solid #fff;
-        padding: 12px 14px;
-        transition-duration: 1.2s;
-        transition-property: background-color;  /*Анимация для цвета фона*/
-        &:hover {
-            outline: 2px solid #fff;
-            background-color: $grey;
-        }
-
-        img {
-            display: inline-block;
-            vertical-align: middle;
-            padding-right: 10px;
-        }
-    }
-    .card:hover & {
-        opacity: 1;
-    }
-}
-
-.button {
-    transition-duration: 1s;  
-    &:hover{
-        transform: scale(1.1);   
-    }
-    .button_text {
-        transition-duration: 0.5s;  
-    &:hover{
-        color: #F8F8F8;
-        background-color: #F16D7F;
-        box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
-       
-    }
-}
-}
 .Fetured_Items__button {
+    @include btn-w(14px 38px,$pink);
     text-align: center;
-    border: none;
     background-color: $white;
-    display: inline-block;
-    text-align: center;
-    a {
-    padding: 14px 38px;
-    border: 1px solid #F16D7F;
-}
+    transition-duration: 0.5s; 
+    @include t16(400,$light_pink);
+    &:hover{  
+        background-color: $pink; 
+        color: #F8F8F8;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+        @include t16(400,$white);           
+    }
 }

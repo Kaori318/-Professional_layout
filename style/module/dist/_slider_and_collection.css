@@ -111,15 +111,18 @@
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
-  border: 1px solid #F26376;
+  outline: 1px solid #F26376;
   padding: 12px 40px;
+}
+.button__Add_to_Cart:hover {
+  color: #FFFFFF;
+  background-color: #F26376;
 }
 
 .button__Add_to_Cart svg {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
-  transition-duration: 0.5s;
 }
 
 .button__Add_to_Cart:hover svg {
