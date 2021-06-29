@@ -8,7 +8,7 @@
 @import "module/breadcrumbs";
 @import "module/filtet_menu";
 @import "module/pagination";
-@import "module/slider_and_collection"; 
+@import "module/slider_and_collection";
 @import "module/card_cart";
 @import "module/registration";
 @import "module/card_box__card";
@@ -24,16 +24,20 @@ $width: 1140px;
     box-sizing: border-box;
     list-style: none;
 }
+
 body {
     font-family: Lato;
 }
+
 a {
     text-decoration: none;
 }
+
 .container {
     max-width: $width;
     margin: 0 auto;
 }
+
 .color-pink {
     color: #F16D7F;
-    }
+}

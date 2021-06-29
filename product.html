@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/dist/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Product</title>
 </head>
 
@@ -101,24 +101,28 @@
             <span class="breadcrumbs__text">NEW ARRIVALS
             </span>
             <ol class="breadcrumbs__list">
-                <li class="breadcrumbs__link"><a href="">HOME</a></li>
-                <li class="breadcrumbs__link"><a href="">MEN</a></li>
-                <li class="breadcrumbs__link"><a href="">NEW ARRIVALS</a></li>
+                <li class="breadcrumbs__link"><a href="index.html">HOME</a></li>
+                <li class="breadcrumbs__link"><a href="catalog.html">MEN</a></li>
+                <li class="breadcrumbs__link"><a href="product.html">NEW ARRIVALS</a></li>
             </ol>
         </div>
     </section>
     <div class="slider__background">
         <div class="slider">
-            <button class="slide__button"><svg width="13" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.7 3.75L4.95 11.5l7.75 7.75-1.55 3.1L.3 11.5 11.15.65l1.55 3.1z" fill="#000" />
+            <button class="slide__button sl1"><svg width="13" height="23" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.7 3.75L4.95 11.5l7.75 7.75-1.55 3.1L.3 11.5 11.15.65l1.55 3.1z"/>
                 </svg></button>
-            <img src="img/product_slide.png" alt="slide-photo">
-            <button class="slide__button"><svg width="13" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M.3 19.25l7.75-7.75L.3 3.75 1.85.65 12.7 11.5 1.85 22.35.3 19.25z" fill="#F16D7F" />
+                <picture>
+                    <source media="(max-width: 787px)" srcset="img/product_slide767.png">
+                    <source media="(max-width: 1095px)" srcset="img/product_slide1095.png">
+                    <img class="slider__photo" src="img/product_slide.png" alt="product">
+                </picture>
+            <button class="slide__button sl2"><svg width="13" height="23" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.3 19.25l7.75-7.75L.3 3.75 1.85.65 12.7 11.5 1.85 22.35.3 19.25z"/>
                 </svg></button>
         </div>
     </div>
-    <div class="container">
+    <div class="container1195">
         <section class="collection">
             <div class="collection__top">
                 <h2>WOMEN COLLECTION</h2>
@@ -128,31 +132,32 @@
                     syndicate collaborative architectures before cutting-edge services. Completely visualize parallel
                     core competencies rather than exceptional portals.</p>
                 <strong class="collection__price">$561</strong>
+                <hr class="lin2">
             </div>
-            <hr class="lin2">
+            
             <div class="collection__bottom">
                 <div class="collection__menu">
-                    <span class="collection__item">CHOOSE COLOR <svg width="11" height="6" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
-                                fill="#6F6E6E" />
-                        </svg>
-                    </span>
-                    <span class="collection__item">CHOOSE SIZE <svg width="11" height="6" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
-                                fill="#6F6E6E" />
-                        </svg>
-                    </span>
-                    <span class="collection__item">QUANTITY <svg width="11" height="6" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
-                                fill="#6F6E6E" />
-                        </svg>
-                    </span>
+                    <a href=""><span class="collection__item">CHOOSE COLOR <svg width="11" height="6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
+                            fill="#6F6E6E" />
+                    </svg>
+                </span></a>
+                    <a href="#"><span class="collection__item">CHOOSE SIZE<svg width="11" height="6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
+                            fill="#6F6E6E" />
+                    </svg>
+                </span></a>
+                    <a href=""><span class="collection__item">QUANTITY<svg width="11" height="6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
+                            fill="#6F6E6E" />
+                    </svg>
+                </span></a>
                 </div>
                 <div class="button collection__button">
                     <a href="" class="button__Add_to_Cart button_text">

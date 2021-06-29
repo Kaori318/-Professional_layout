@@ -3,7 +3,7 @@
 .intro {
     background-color: #F1E4E6;
     margin-bottom: 65px;
-    min-height: calc(100vh - 70px);
+    height: calc(100vh - 70px);
     display: flex;
     align-items: flex-end;
 
@@ -13,22 +13,24 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        background-image: url(../../img/top.png);
+        background-image: url(../img/top.png);
         background-repeat: no-repeat;
         background-position: -228px bottom;
     }
+
     &__text {
         max-width: 465px;
     }
+
     &__text h1 {
-        @include text(30px,38px,700,$dark_grey);
+        @include text(30px, 38px, 700, $dark_grey);
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
         padding-right: 80px;
     }
+
     &__text .font-size-h1 {
-        @include text(48px,58px,900,$dark_grey);
-    display: block;
+        @include text(48px, 58px, 900, $dark_grey);
+        display: block;
     }
 }
-
