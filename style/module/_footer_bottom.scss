@@ -1,32 +1,38 @@
 @import "color_font_mixin";
 
 .bottom {
-    background-image: url(../../img/photo_subscribe.jpg);
+    background-image: url(../img/photo_subscribe.jpg);
     min-height: 448px;
     background-repeat: no-repeat;
     background-size: cover;
+
     &__colump {
         padding-top: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__item {
         width: 370px;
         text-align: center;
         vertical-align: middle;
+
         img {
             padding-bottom: 30px;
         }
+
         p {
-            @include t20(400,$dark_grey);
+            @include t20(400, $dark_grey);
         }
+
         .bold {
-            @include t20(700,$dark_grey);
+            @include t20(700, $dark_grey);
             display: block;
         }
-         h3 {
-             @include t18(400,$dark_grey);
+
+        h3 {
+            @include t18(400, $dark_grey);
             line-height: 30px;
             padding-bottom: 32px;
         }
@@ -44,33 +50,53 @@
         background: #E1E1E1;
         border: none;
         width: 256px;
+
+        &:focus {
+            outline: none !important;
+            border: 1px solid $grey;
+            background-color: #fff;
+        }
+
+        &:hover {
+            border: 1px solid $grey;
+        }
     }
+
     &__wrap {
         display: flex;
         width: 100%;
     }
+
     &__button {
         border-radius: 0 20px 20px 0;
-        @include t14(300,$white);
+        @include t14(300, $white);
         @include btn-p(18px 22px);
         cursor: pointer;
+
+        &:hover {
+            background-color: #ee455c;
+        }
     }
 }
+
 .All_Rights_Reserved {
     background: $dark_grey;
+
     &__wrap {
         display: flex;
         justify-content: space-between;
     }
-    
+
     &__text {
         padding: 30px 0 30px 0;
-        @include t16(400,$snow_white);
+        @include t16(400, $snow_white);
     }
 }
+
 .social {
     display: flex;
     padding-top: 24px;
+
     &__link {
         text-decoration: none;
         font-size: 30px;
@@ -79,14 +105,17 @@
         width: 32px;
         height: 32px;
         @include centr;
+
         &:not(:last-child) {
             margin-right: 8px;
         }
+
         &:hover {
             background-color: $light_pink;
+
             svg {
                 fill: $white;
             }
-        }        
+        }
     }
 }
