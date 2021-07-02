@@ -3,6 +3,10 @@
 .container1195 {
     margin: 0 auto;
     max-width: 1140px;
+    @media (max-width: 1195px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .slider__background {
@@ -51,6 +55,18 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 130px;
+    @media (max-width: 1195px) {
+        margin-top: 0;
+        border: none;
+        border-top: 1px solid #EAEAEA;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    @media (max-width:767px) {
+        margin-top: 0;
+    border: none;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+  }
 }
 
 .collection__top {
@@ -125,6 +141,14 @@
 .collection__item {
     @include t14(400, $grey);
     margin-left: 20px;
+    @media (max-width: 787px){
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    @media (max-width: 767px){
+        font-size: 10px;
+    margin-left: 20px;
+  }    
 }
 
 .collection__item svg {

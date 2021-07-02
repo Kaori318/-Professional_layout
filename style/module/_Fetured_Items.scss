@@ -19,7 +19,6 @@
     }
 
 }
-
 .Fetured_Items__button {
     @include btn-w(14px 38px, $pink);
     text-align: center;
@@ -35,6 +34,6 @@
     }
 
     &:active {
-        background-color: rgb(224, 50, 73);
+        background-color: $btn-active;
     }
 }

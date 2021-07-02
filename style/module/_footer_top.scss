@@ -4,6 +4,10 @@
     margin-top: 96px;
     background: $dark_grey;
     padding: 100px 0;
+    @media (max-width: 1195px) {
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
     &__colump {
         display: flex;
         justify-content: space-between;
@@ -11,6 +15,12 @@
         height: 100%;
         flex-wrap: wrap;
         vertical-align: middle;
+        @media (max-width: 1195px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__item {
         width: 360px;
@@ -26,5 +36,11 @@
             @include t14(300,$snow_white);
         }
         
+    }
+}
+
+@media (max-width: 1195px) {
+    .top__item:not(:last-child) {
+            padding-bottom: 48px;
     }
 }

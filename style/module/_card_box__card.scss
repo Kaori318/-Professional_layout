@@ -21,6 +21,35 @@
     &:nth-child(3n) {
         margin-right: 0;
     }
+    @media (max-width: 1195px) {
+        margin-right: 16px;
+        margin-bottom: 16px;
+        &:nth-child(3n) {
+            margin-right: 16px;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 787px) {
+        margin-right: 16px;
+        margin-bottom: 16px;
+        &:nth-child(3n) {
+            margin-right: 16px;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+    @media (max-width:767px) {
+        margin-right: 0;
+        &:nth-child(2n) {
+        margin-right: 0;
+        }
+        &:nth-child(3n) {
+        margin-right: 0px;
+        }
+    }
 
     &__text {
         padding: 0 16px 20px 16px;

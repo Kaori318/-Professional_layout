@@ -9,6 +9,10 @@
     -ms-grid-columns: repeat(auto-fill, 360px);
     grid-template-columns: repeat(auto-fill, 360px);
     grid-gap: 20px;
+    @media (max-width: 1195px) {
+        grid-gap: 0;
+        display: flex;
+    }
 }
 
 .filter {
@@ -102,6 +106,9 @@
 
     a {
         @include t14(400, $grey);
+        @media (max-width: 787px){
+            @include t13(400, $grey);
+        }
     }
 
     svg {
@@ -118,6 +125,10 @@
     outline: none;
     border: none;
     z-index: 2;
+    @media (max-width: 787px){
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
     &::-webkit-details-marker {
         display: none;
@@ -163,4 +174,19 @@
 
 .filter-none {
     display: none;
+    @media (max-width: 787px){
+        display: block;
+    }
+}
+
+@media (max-width: 1195px) {
+    .filter-3 {
+        display: none;
+    }
+}
+
+.fil-787 {
+    @media (max-width: 787px){
+    display: none;
+}
 }

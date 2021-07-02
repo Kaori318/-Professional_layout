@@ -44,10 +44,8 @@
     }
 
     &__link {
+        @include text(22px,26px,400,$grey2);
         padding-bottom: 6px;
-        font-size: 22px;
-        line-height: 26px;
-        color: #575757;
 
         input {
             margin-left: 25px;
@@ -69,6 +67,7 @@
     &:hover {
         background-color: #A4A4A4;
         color: $white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
     }
 
     &-box {
@@ -101,6 +100,7 @@
         &:hover {
             background-color: #A4A4A4;
             color: $white;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
         }
     }
 }
@@ -149,7 +149,10 @@
         cursor: pointer;
 
         &:hover {
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+        }
+        &:active {
+          background-color: $btn-active;  
         }
     }
 }

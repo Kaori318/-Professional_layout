@@ -11,15 +11,29 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 1195px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 140px;
+        }
     }
-
     &__item {
         width: 370px;
         text-align: center;
         vertical-align: middle;
+        @media (max-width: 1195px) {
+            width: 370px;
+            text-align: center;
+            padding-top: 60px;
+        }
 
         img {
             padding-bottom: 30px;
+            @media (max-width: 1195px) {
+                padding-bottom: 30px;
+            }
         }
 
         p {
@@ -53,12 +67,12 @@
 
         &:focus {
             outline: none !important;
-            border: 1px solid $grey;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
             background-color: #fff;
         }
 
         &:hover {
-            border: 1px solid $grey;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
         }
     }
 
@@ -75,6 +89,7 @@
 
         &:hover {
             background-color: #ee455c;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
         }
     }
 }
