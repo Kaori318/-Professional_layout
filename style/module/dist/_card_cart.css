@@ -1,3 +1,9 @@
+@charset "UTF-8";
+/*ЦВЕТ*/
+/*ТЕКСТ*/
+/*КНОПКИ*/
+/*КНОПКИ ПРИ НАВЕДЕНИИ И НАЖАТИИ*/
+/*ЦЕНТРИРОВАНИЕ*/
 .cart {
   padding-top: 96px;
   padding-bottom: 128px;
@@ -8,7 +14,7 @@
 }
 .cart__card {
   display: flex;
-  width: 100%;
+  width: 650px;
   box-shadow: 22px 22px 20px rgba(0, 0, 0, 0.15);
 }
 .cart__card:not(:last-child) {
@@ -36,10 +42,12 @@
   padding-top: 40px;
 }
 .cart__link {
-  padding-bottom: 6px;
+  /*Текст с другими параметрами*/
   font-size: 22px;
   line-height: 26px;
-  color: #575757;
+  font-weight: 400;
+  color: #5E5E5E;
+  padding-bottom: 6px;
 }
 .cart__link input {
   margin-left: 25px;
@@ -62,6 +70,11 @@
   padding: 17px 39px;
   background-color: #fff;
 }
+.btn:hover {
+  background-color: #A4A4A4;
+  color: #FFFFFF;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
 .btn-box {
   margin-top: 72px;
   display: flex;
@@ -83,7 +96,7 @@
 .shipping_adress__form {
   margin-top: 20px;
 }
-.shipping_adress__form a {
+.shipping_adress__form button {
   font-size: 11px;
   line-height: 13px;
   font-weight: 300;
@@ -93,22 +106,27 @@
   display: inline-block;
   margin-top: 3px;
 }
+.shipping_adress__form button:hover {
+  background-color: #A4A4A4;
+  color: #FFFFFF;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
 
 .shipping__inp {
   padding: 14px 17px;
-  font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #222222;
+  font-weight: 300;
+  color: #B1B1B1;
   border: 1px solid #A4A4A4;
   margin-bottom: 21px;
-  width: 326px;
+  width: 360px;
 }
 
 .sub_total {
   margin-top: 57px;
   text-align: right;
-  padding: 40px 44px;
+  padding: 40px 43px;
   background: #F5F3F3;
 }
 .sub_total h3 {
@@ -139,12 +157,21 @@
   margin-bottom: 17px;
   border-top: 1px solid #e2e2e2;
 }
-.sub_total a {
+.sub_total button {
+  /*Розовая кнопка без рамки*/
+  padding: 15px 37px;
+  background-color: #F26376;
+  border: none;
   display: inline-block;
-  padding: 15px 41px;
   font-size: 16px;
   line-height: 19px;
-  font-weight: 300;
+  font-weight: 200;
   color: #FFFFFF;
-  background: #F16D7F;
+  cursor: pointer;
+}
+.sub_total button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+}
+.sub_total button:active {
+  background-color: #e03249;
 }

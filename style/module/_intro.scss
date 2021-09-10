@@ -2,37 +2,51 @@
 
 .intro {
     background-color: #F1E4E6;
-    height: 764px;
     margin-bottom: 65px;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: flex-end;
+    @media (max-width: 787px) {
+        @include centr;
+    }
     &__wrap {
+        width: 100%;
+        min-height: 760px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        height: 100%;
-        background-image: url(../../img/top.png);
+        background-image: url(../img/top.png);
         background-repeat: no-repeat;
         background-position: -228px bottom;
+        @media (max-width: 1195px) {
+            min-height: 700px;
+            background-position: 0 bottom;
+            background-size: 65%;
+        }
+        @media (max-width: 787px) {
+            @include centr;
+            background: none;
+        }
     }
+
     &__text {
-        max-width: 465px;
+        max-width: 450px;
     }
+
     &__text h1 {
+        @include text(30px, 38px, 700, $dark_grey);
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 38px;
-        color: #222222;
-        padding-right: 80px;
+        @media (max-width: 1195px) {
+            padding-right: 0px;
+        }
+        @media (max-width: 787px) {
+            padding-right: 0px;
+        }
     }
+
     &__text .font-size-h1 {
-        font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    display: block;
+        @include text(48px, 58px, 900, $dark_grey);
+        display: block;
     }
 }
-
-.color-pink {
-    color: #F16D7F;
-    }

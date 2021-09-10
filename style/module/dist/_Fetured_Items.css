@@ -1,108 +1,55 @@
+@charset "UTF-8";
+/*ЦВЕТ*/
+/*ТЕКСТ*/
+/*КНОПКИ*/
+/*КНОПКИ ПРИ НАВЕДЕНИИ И НАЖАТИИ*/
+/*ЦЕНТРИРОВАНИЕ*/
 .Fetured_Items {
-  text-align: center;
   margin-bottom: 48px;
   margin-top: 96px;
+  text-align: center;
 }
 .Fetured_Items__header {
   padding-bottom: 48px;
 }
-.Fetured_Items h2 {
+.Fetured_Items__header h2 {
+  /*Текст с другими параметрами*/
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
   color: #222222;
   padding-bottom: 6px;
 }
-.Fetured_Items p {
+.Fetured_Items__header p {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   color: #B1B1B1;
 }
 
-.card-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.card {
-  width: 360px;
-  background: #F8F8F8;
-  margin-bottom: 30px;
-  position: relative;
-}
-.card__text {
-  padding: 0 16px 20px 16px;
-}
-.card__text h4 {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #000000;
-  padding-top: 24px;
-  padding-bottom: 13px;
-}
-.card__text p {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
-  color: #656565;
-  padding-bottom: 18px;
-}
-
-.button_text,
-.card__strong {
+.Fetured_Items__button {
+  /*Проздачная с рамкой*/
+  padding: 14px 38px;
+  outline: 1px solid #F26376;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  background-color: #FFFFFF;
+  transition-duration: 0.5s;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
   color: #F16D7F;
 }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 420px;
-  background-color: rgba(58, 56, 56, 0.83);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: 0.5s;
-  border: 1px solid #FFFFFF;
-}
-.overlay__button {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
-  color: #FBFBFB;
-  border: 1px solid #fff;
-  padding: 12px 14px;
-}
-.overlay__button img {
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 10px;
-}
-.card:hover .overlay {
-  opacity: 1;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-}
-.button:hover .button_text {
+.Fetured_Items__button:hover {
+  background-color: #F26376;
   color: #F8F8F8;
-  background-color: #F16D7F;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #FFFFFF;
 }
-
-.Fetured_Items__button a {
-  padding: 14px 38px;
-  border: 1px solid #F16D7F;
-  text-align: center;
-  display: inline-block;
+.Fetured_Items__button:active {
+  background-color: #e03249;
 }

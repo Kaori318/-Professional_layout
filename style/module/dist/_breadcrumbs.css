@@ -1,10 +1,26 @@
+@charset "UTF-8";
+/*ЦВЕТ*/
+/*ТЕКСТ*/
+/*КНОПКИ*/
+/*КНОПКИ ПРИ НАВЕДЕНИИ И НАЖАТИИ*/
+/*ЦЕНТРИРОВАНИЕ*/
 .breadcrumbs {
   background-color: #F8F3F4;
+  height: 148px;
+  display: flex;
+  align-items: center;
 }
 .breadcrumbs__wrap {
   display: flex;
   justify-content: space-between;
-  padding: 60px 0;
+  width: 100%;
+}
+@media (max-width: 787px) {
+  .breadcrumbs__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .breadcrumbs__list {
   list-style: none;
@@ -31,4 +47,9 @@
   line-height: 29px;
   font-weight: 400;
   color: #F16D7F;
+}
+@media (max-width: 787px) {
+  .breadcrumbs__text {
+    padding-bottom: 32px;
+  }
 }

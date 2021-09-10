@@ -1,35 +1,46 @@
 @import "color_font_mixin";
 
-.footer__top {
-    background: #222224;
-    margin-top: 95px;
-    height: 341px;
+.top {
+    margin-top: 96px;
+    background: $dark_grey;
+    padding: 100px 0;
+    @media (max-width: 1195px) {
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+    &__colump {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        flex-wrap: wrap;
+        vertical-align: middle;
+        @media (max-width: 1195px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__item {
+        width: 360px;
+        text-align: center;
+    }
+    &__text{
+        h3 {
+            @include t20(400,$snow_white);
+            padding-top: 20px;
+            padding-bottom: 16px;
+        }  
+        p {
+            @include t14(300,$snow_white);
+        }
+        
+    }
 }
 
-.top__colump {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.top__item {
-    width: 360px;
-    text-align: center;
-}
-
-.top__text p {
-    color: #FBFBFB;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 300;
-}
-
-.top__text h3 {
-    font-size: 19.96px;
-    line-height: 24px;
-    color: #FBFBFB;
-    padding-top: 20px;
-    padding-bottom: 16px;
-    font-weight: 400;
+@media (max-width: 1195px) {
+    .top__item:not(:last-child) {
+            padding-bottom: 48px;
+    }
 }
